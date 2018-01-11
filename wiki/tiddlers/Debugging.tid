@@ -1,0 +1,7 @@
+created: 20171026070413448
+creator: Klaus
+modified: 20171026070431997
+modifier: Klaus
+title: Debugging
+
+PM-CB: (Corion) ... and a hint by me - if I say that you should remove your debugging code from a program, do so and retest. Because now the program does not work outside of debugging mode :-( 
