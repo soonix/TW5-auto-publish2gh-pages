@@ -1,0 +1,42 @@
+created: 20180213095746091
+creator: Klaus
+modified: 20180214063024221
+modifier: Klaus
+tags: top
+title: EDIFACT AS2
+
+(vom Dezember 2013)
+
+*  Servername DI (EDI=electronic Data Interchange)
+
+!! Software 
+!!! (Installationsdateien in C:\Install):
+#  Filetransfer: Mendelson opensource AS2<br>installiert in C:\MEC\as<br>Wichtig: Berechtigungen "Ersteller/Besitzer" wegmachen, sonst gibt es Probleme bei der Konfigurationsdatenbank!
+#  Schlüsselverwaltung: portecle<br>extrahiert in C:\Programme (x86)\portecle
+#  portecle braucht Java (32-bit)
+#  Java-Security policies<br>&rarr; in Java\lib\security
+#  <strike>[[RunAsSvc|http://www.pirmasoft.de/cms/freeware/runassvc]]</strike><br>Java Service Wrapper http://wrapper.tanukisoftware.com
+
+#  [[Blat|http://www.blat.net/]] als Mail-Versandprogramm<br>&rarr; nach C:\MEC\Mail
+
+!! Konfiguration
+#  Dienst für AS2<br>Name des neuen Dienstes ist EDI-AS2
+#  Firewall konfigurieren
+#  Einstellungen AS2 Ordner, Mail- und Server-Adressen
+#  Schlüsselpaar und Zertifikat für AS2 lokale "Stationen"
+#  Konfiguration Gegenstellen
+
+!! Start und Stop
+*  Dienst starten und beenden über "Dienste" &rarr; EDI-AS2<br>oder mit erhöhten Rechten "net start EDI-AS2" bzw. "net stop EDI-AS2"
+*  Dienst beenden auch möglich über AS2STOP (Desktopverknüpfung)
+*  zum Konfigurieren etc auch erstmal AS2STOP, dann C:\MEC\AS2\AS2.EXE<br>Nicht vergessen: nach dem Verlassen von AS2.EXE wieder den Dienst starten
+
+!! Fehlersuche und -behebung
+*  Beim Server herunterfahren bzw. durchstarten wird der Dienst nicht korrekt beendet
+*  Fehler beim Starten des Programms/des Dienstes
+*  Nach Serverneustart muss möglicherweise die Lock-Datei gelöscht werden
+
+!! Überwachung, Dateiversand und -Empfang
+*  http://di.zoar.de:8080/webas2/ Benutzer guest / guest
+*  Ordnerstruktur
+*  Ereigniskonfiguration
