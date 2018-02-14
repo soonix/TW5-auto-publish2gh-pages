@@ -7,3 +7,6 @@ type: text/vnd.tiddlywiki
 
 {{HelloThere}}
 
+! Inhalt
+
+<<list-links "[tag[top]]">>
